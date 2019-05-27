@@ -5,7 +5,6 @@ const code = require('../util/code')
 const jwt = require('../util/jwt')
 
 class UsersController extends Controller {
-
     async register() {
         const {ctx, service} = this
         const res = await service.users.register(ctx.request.body)
